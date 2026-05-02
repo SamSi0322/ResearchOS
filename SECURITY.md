@@ -12,7 +12,7 @@ channels:
    The advisory stays private until we publish it; we can coordinate the
    fix with you in the same thread.
 
-2. **Email**: <y3si@uwaterloo.ca>. Encrypt at your discretion. The
+2. **Email**: <yuan.si@uwaterloo.ca>. Encrypt at your discretion. The
    mailbox is not formally monitored 24/7 — if the issue is time-sensitive,
    GitHub Private Vulnerability Reporting is the faster channel.
 
