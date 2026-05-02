@@ -1,0 +1,70 @@
+site_name: ResearchOS
+site_description: A local-first research decision and execution system.
+site_url: https://samsi0322.github.io/ResearchOS/
+site_author: Yuan Si
+copyright: Copyright &copy; Yuan Si — AGPL-3.0
+repo_url: https://github.com/SamSi0322/ResearchOS
+repo_name: SamSi0322/ResearchOS
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Local run: local-run.md
+  - API: api.md
+  - Model policy: model-policy.md
+  - Smoke mode: smoke-mode.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Anchor link
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/SamSi0322/ResearchOS
