@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/SamSi0322/ResearchOS/security/advisories/new
+    about: Please do NOT open a public issue for security vulnerabilities. Use Private Vulnerability Reporting (or the email fallback in SECURITY.md).

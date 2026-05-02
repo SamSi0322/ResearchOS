@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: ResearchOS
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: Yuan
+    family-names: Si
+    email: yuan.si@uwaterloo.ca
+    affiliation: University of Waterloo
+repository-code: "https://github.com/SamSi0322/ResearchOS"
+url: "https://github.com/SamSi0322/ResearchOS"
+license: AGPL-3.0
+abstract: >
+  ResearchOS is a local-first research decision and execution system. It turns a
+  research brief into runnable experiments, evidence-checked claims, and a
+  packaged manuscript draft, with provider-agnostic LLM adapters and human-in-the-loop
+  approval gates. Runs entirely on localhost.
+keywords:
+  - research
+  - decision-support
+  - llm
+  - large-language-models
+  - reproducibility
+  - python
+  - fastapi
+  - local-first
