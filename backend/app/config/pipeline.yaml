@@ -1,0 +1,37 @@
+# Default ResearchOS pipeline configuration.
+# Loaded at startup; per-project overrides are stored alongside the project.
+funnel:
+  stages:
+    - id: S0
+      label: "Formal candidate pool"
+      target_count: 50
+    - id: S1
+      label: "Structured screening"
+      target_count: 20
+    - id: S2
+      label: "Pilot validation"
+      target_count: 10
+    - id: S3
+      label: "Robustness validation"
+      target_count: 5
+    - id: S4
+      label: "Draft / review / package"
+      target_count: 1
+
+model_routing:
+  idea_generation:      { provider: default, temperature: 0.9 }
+  structured_screening: { provider: default, temperature: 0.2 }
+  spec_generation:      { provider: default, temperature: 0.3 }
+  code_generation:      { provider: default, temperature: 0.2 }
+  code_review:          { provider: default, temperature: 0.2 }
+  result_analysis:      { provider: default, temperature: 0.2 }
+  draft_generation:     { provider: default, temperature: 0.3 }
+  review:               { provider: default, temperature: 0.2 }
+
+budget:
+  default_ceiling_usd: 50.0
+  warn_ratio: 0.8
+
+execution:
+  default_run_timeout_seconds: 600
+  max_concurrent_runs: 2

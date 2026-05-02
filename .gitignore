@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Local runtime data - NEVER commit these, they contain secrets/artifacts
+var/
+*.sqlite
+*.sqlite3
+*.db
+
+# Env / secrets
+.env
+.env.local
+# local-dev fallback key file. Never commit real provider keys.
+API_KEYS.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
