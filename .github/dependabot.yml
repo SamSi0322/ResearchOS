@@ -12,6 +12,11 @@ updates:
       - "backend"
     commit-message:
       prefix: "deps(backend)"
+    # Major bumps usually have breaking changes that need manual review.
+    # Dependabot only auto-proposes minor and patch updates here.
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # Frontend npm deps
   - package-ecosystem: "npm"
@@ -25,6 +30,9 @@ updates:
       - "frontend"
     commit-message:
       prefix: "deps(frontend)"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
   # GitHub Actions versions
   - package-ecosystem: "github-actions"
@@ -36,3 +44,6 @@ updates:
       - "ci"
     commit-message:
       prefix: "deps(actions)"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
